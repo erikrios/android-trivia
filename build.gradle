@@ -2,6 +2,7 @@
 
 ext {
     navigationVersion = '1.0.0'
+    supportlibVersion = '1.0.0-rc03'
 }
 
 buildscript {

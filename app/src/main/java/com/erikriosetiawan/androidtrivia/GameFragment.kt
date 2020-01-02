@@ -9,6 +9,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.erikriosetiawan.androidtrivia.databinding.FragmentGameBinding
 
+/**
+ * A simple [Fragment] subclass.
+ */
 class GameFragment : Fragment() {
 
     data class Question(

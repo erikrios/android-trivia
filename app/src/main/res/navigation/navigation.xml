@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/titleFragment2">
+    app:startDestination="@id/titleFragment">
 
     <fragment
-        android:id="@+id/titleFragment2"
+        android:id="@+id/titleFragment"
         android:name="com.erikriosetiawan.androidtrivia.TitleFragment"
         android:label="fragment_title"
         tools:layout="@layout/fragment_title" >
@@ -19,4 +19,14 @@
         android:name="com.erikriosetiawan.androidtrivia.GameFragment"
         android:label="GameFragment"
         tools:layout="@layout/fragment_game"/>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.erikriosetiawan.androidtrivia.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" />
+    <fragment
+        android:id="@+id/gameWonFragment"
+        android:name="com.erikriosetiawan.androidtrivia.GameWonFragment"
+        android:label="fragment_game_won"
+        tools:layout="@layout/fragment_game_won" />
 </navigation>

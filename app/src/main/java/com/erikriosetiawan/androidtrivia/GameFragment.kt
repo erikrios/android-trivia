@@ -122,10 +122,16 @@ class GameFragment : Fragment() {
                         setQuestion()
                         binding.invalidateAll()
                     } else {
-                        view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment())
+                        view.findNavController().navigate(
+                            GameFragmentDirections.actionGameFragmentToGameWonFragment(
+                                numQuestions,
+                                questionIndex
+                            )
+                        )
                     }
                 } else {
-                    view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment())
+                    view.findNavController()
+                        .navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment())
                 }
             }
         }
